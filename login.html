@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoFlow | Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-wrap">
+      <section class="card glass login-card fade-up">
+        <h1 class="title">Welcome to ToDoFlow</h1>
+        <p class="subtitle">Start your first-year JavaScript project with style.</p>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Enter your name" required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Any 4+ characters"
+              minlength="4"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%">Login</button>
+          <p id="loginMessage" class="hint"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="login.js"></script>
+  </body>
+</html>

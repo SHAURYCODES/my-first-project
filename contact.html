@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoFlow | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="home.html">
+          <span class="brand-dot"></span>
+          ToDoFlow
+        </a>
+        <nav class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="info.html">Info</a>
+          <a class="active" href="contact.html">Contact Us</a>
+          <a href="login.html" id="logoutBtn">Logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page container">
+      <section class="hero fade-up">
+        <div>
+          <h1>Contact Us</h1>
+          <p>Need help or want to share feedback? Send us a message.</p>
+        </div>
+      </section>
+
+      <section class="contact-grid fade-up">
+        <article class="card content-card glass">
+          <h2 class="title">Project Team</h2>
+          <p class="subtitle">First-Year FEE Project</p>
+          <p style="margin-top: 0">
+            Email: shaury1233.be25@chitkarauniversity.edu.in<br />
+            Phone: +91 92043 39763<br />
+            Location: Chitkara University,Himachal Pardesh-174103.
+          </p>
+        </article>
+
+        <article class="card content-card glass">
+          <h2 class="title">Send Message</h2>
+          <form id="contactForm">
+            <div class="input-group">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" type="text" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" required />
+            </div>
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p id="contactStatus" class="hint"></p>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

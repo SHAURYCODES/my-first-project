@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoFlow | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="home.html">
+          <span class="brand-dot"></span>
+          ToDoFlow
+        </a>
+        <nav class="nav-links">
+          <a class="active" href="home.html">Home</a>
+          <a href="info.html">Info</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html" id="logoutBtn">Logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page container">
+      <section class="hero fade-up">
+        <div>
+          <h1>Your smart daily to-do dashboard</h1>
+          <p id="welcomeText">Stay focused and manage tasks with a smooth UI.</p>
+        </div>
+        <div class="card panel glass">
+          <p class="subtitle" style="margin-bottom: 10px">Daily motivation</p>
+          <p style="margin: 0">"Small progress each day adds up to big results."</p>
+        </div>
+      </section>
+
+      <section class="task-hub fade-up">
+        <h2 class="title">Add New Task</h2>
+        <form id="todoForm" class="todo-form">
+          <input id="todoInput" type="text" placeholder="Write your task clearly here..." required />
+          <input id="todoDate" type="date" />
+          <button class="btn btn-primary add-task-btn" type="submit">Add New Task</button>
+        </form>
+
+        <div class="stats-box">
+          <div class="stat-pill">Pending: <strong id="pendingCount">0</strong></div>
+          <div class="stat-pill">Completed: <strong id="doneCount">0</strong></div>
+          <div class="stat-pill">Total: <strong id="totalCount">0</strong></div>
+        </div>
+
+        <div class="task-sections">
+          <article>
+            <h3 class="section-title">Pending Tasks</h3>
+            <ul id="pendingList" class="task-list"></ul>
+            <p id="pendingEmptyState" class="hint">No pending tasks right now.</p>
+          </article>
+
+          <article>
+            <h3 class="section-title">Completed Tasks</h3>
+            <ul id="completedList" class="task-list"></ul>
+            <p id="completedEmptyState" class="hint">No completed tasks yet.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
